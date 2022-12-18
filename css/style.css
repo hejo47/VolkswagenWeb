@@ -8,12 +8,14 @@
   height: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
-#header {
+.header {
   width: 100%;
   background-color: #111;
+  position: sticky;
 }
-#header .top {
+.header .top {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -21,74 +23,106 @@
   justify-content: flex-end;
   align-items: center;
 }
-#header .top ul {
+.header .top ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   column-gap: 30px;
 }
-#header a {
+.header a {
   color: #FFF;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 15px;
+  line-height: 1.75em;
 }
-#header a i {
+.header a i {
   font-size: 1.4em;
   margin-right: 5px;
   margin-top: 2.5px;
 }
-#header .bottom {
+.header .bottom {
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
-#header .bottom .left {
+.header .bottom .left {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
 }
-#header .bottom .right #search {
+.header .bottom .right #search {
   margin-bottom: 10px;
   width: 200px;
   height: 30px;
   padding: 0 10px;
 }
-#header .bottom .right #search_btn {
+.header .bottom .right #search_btn {
   height: 30px;
   padding: 0 10px;
   color: #FFF;
   background-color: transparent;
   font-size: 1.1em;
+  border: none;
 }
-#header .bottom .left .logo {
-}
-#header .bottom .left .logo a {
+.header .bottom .left .logo a {
   display: block;
 }
-#header .bottom .left .logo a img {
+.header .bottom .left .logo a img {
   height: 100%;
   max-height: 40px;
   filter:  brightness(0) invert(1);
 }
-#header .bottom .left .logo a img.logo_text {
+.header .bottom .left .logo a img.logo_text {
   max-height: 35px;
 }
-#main_gnb {
+.main_gnb {
   padding-left: 40px;
 }
-#main_gnb .depth1 {
+.main_gnb .depth1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
-#main_gnb .depth1 > li > a {
+.main_gnb .depth1 > li > a {
+  font-size: 18px;
   font-weight: 600;
-  padding: 10px 15px;
+  padding: 15px 40px;
 }
-#main_gnb .depth2 .inner {
+.main_gnb .depth2 .inner {
   display: none;
+}
+/* open header */
+.header.open .bottom {
+  height: fit-content;
+  padding-bottom: 30px;
+}
+.main_gnb.on .depth2 .inner {
+  display: block;
+  margin-top: 20px;
+}
+.main_gnb.on .depth1 > li > a {
+  position: relative;
+}
+.main_gnb.on .depth1 > li > a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+  transition: 0.5s ease all;
+}
+.main_gnb.on .depth1 > li:hover > a::after {
+  width: 100%;
+}
+.main_gnb.on .depth2 li a {
+  transition: 0.3s ease all;
+}
+.main_gnb.on .depth2 li:hover a {
+  color: rgb(63, 78, 146);
 }

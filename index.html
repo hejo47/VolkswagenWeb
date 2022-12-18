@@ -35,15 +35,16 @@
   <script src="./js/common.js"></script>
   <!-- CDN -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <title>Volkswagen</title>
 </head>
 <body>
-  <header id="header">
+  <header class="header">
     <div class="container top">
       <ul>
-        <li><a href="#"><i class="ri-car-line"></i>SHOWROOM</a></li>
-        <li><a href="#"><i class="ri-service-line"></i>SERVICE CENTER</a></li>
-        <li><a href="#"><i class="ri-question-line"></i>HELP</a></li>
+        <li><a href="#"><i class="ri-car-line"></i>Showroom</a></li>
+        <li><a href="#"><i class="ri-service-line"></i>Service Center</a></li>
+        <li><a href="#"><i class="ri-question-line"></i>Help</a></li>
       </ul>
     </div>
     <div class="container bottom">
@@ -54,13 +55,13 @@
             <img src="./img/logo/logo_txt.svg" alt="logo_txt" class="logo_text" />
           </a>
         </div>
-        <nav id="main_gnb">
+        <nav class="main_gnb">
           <ul class="depth1">
             <li>
-              <a href="#">MODEL</a>
+              <a href="#">Model</a>
             </li>
             <li>
-              <a href="#">TECHNOLOGY</a>
+              <a href="#">Technology</a>
               <div class="depth2">
                 <ul class="inner">
                   <li><a href="#">운전자 보조 시스템</a></li>
@@ -69,40 +70,64 @@
               </div>
             </li>
             <li>
-              <a href="#">SERVICE</a>
+              <a href="#">Service</a>
               <div class="depth2">
                 <ul class="inner">
-                  <li><a href="#">운전자 보조 시스템</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
-                  <li><a href="#">안전 및 편의 사양</a></li>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">My Volkswagen App</a></li>
+                  <li><a href="#">서비스 이용하기</a></li>
+                  <li><a href="#">서비스 안내</a></li>
+                  <li><a href="#">폭스바겐 순정 부품</a></li>
+                  <li><a href="#">액세서리</a></li>
+                  <li><a href="#">이전 모델</a></li>
+                  <li><a href="#">유용한 정보</a></li>
+                  <li><a href="#">ID 서비스</a></li>
                 </ul>
               </div>
             </li>
             <li>
-              <a href="#">PROMOTION</a>
+              <a href="#">Promotion</a>
             </li>
             <li>
-              <a href="#">NEWS</a>
+              <a href="#">News</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="right">
         <form action="" method="post">
-          <input type="text" name="search" id="search" placeholder="SEARCH" />
+          <input type="text" name="search" id="search" placeholder="Search" />
           <button type="submit" id="search_btn"><i class="ri-search-line"></i></button>
         </form>
       </div>
     </div>
   </header>
+  <section class="main-slider">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/src/img/slider/slide1.jpg" alt="홈페이지 슬라이더 사진1" />
+            </div>
+            <div class="swiper-slide">
+                <img src="/src/img/slider/slide1.jpg" alt="홈페이지 슬라이더 사진2" />
+            </div>
+        </div>
+        <div class="main-slider-txtbox">
+            <div class="main-slider-txtbox-left">
+
+            </div>
+            <div class="main-slider-txtbox-right">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+                <button id="swiper-pause-button"><i class="ri-pause-circle-fill"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
   <footer id="footer">
     
   </footer>
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 </html>
