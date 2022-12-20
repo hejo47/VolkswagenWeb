@@ -5,17 +5,16 @@ $(function(){
       autoplay: false,
       scrollbar : {
           el : '.swiper-scrollbar',
-          draggable: false,
+          draggable: true,
       },
       pagination: { 
           el: ".swiper-pagination", 
           type : 'bullets',
       },
-      navigation: {
-        nextEl: '',
-        prevEl: '',
-      },
-
+      // navigation: {
+      //   nextEl: '',
+      //   prevEl: '',
+      // },
   });
 });
 // Swiper - Pause
@@ -31,3 +30,15 @@ $(function(){
 //     }
 // }
 // pauseButton.addEventListener('click', swiperPause);
+// Header
+const menu = document.querySelector(".main_gnb");
+const header = document.querySelector(".header .bottom");
+console.log(header);
+const menuMouseEnterHandler = (gnb) => {
+  header.classList.add('open');
+  gnb.classList.add('on');
+}
+const menuMouseLeaveHandler = (gnb) => {
+  header.classList.remove('open');
+  gnb.classList.remove('on');
+}

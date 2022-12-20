@@ -37,7 +37,6 @@
   <title>Volkswagen</title>
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/common.js"></script>
 </head>
 <body>
   <header class="header">
@@ -56,7 +55,7 @@
             <img src="./img/logo/logo_txt.svg" alt="logo_txt" class="logo_text" />
           </a>
         </div>
-        <nav class="main_gnb">
+        <nav class="main_gnb" onmouseenter="menuMouseEnterHandler(this)" onmouseleave="menuMouseLeaveHandler(this)">
           <ul class="depth1">
             <li>
               <a href="#">Model</a>
@@ -112,9 +111,9 @@
             <div class="swiper-slide">
               <img src="img/main/main_slider_img2.jpg"  alt="홈페이지 슬라이더 사진2" />
             </div>
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img src="img/main/main_slider_img3.jpg"  alt="홈페이지 슬라이더 사진2" />
-            </div>
+            </div> -->
         </div>
         <div class="main-slider-txtbox">
             <div class="main-slider-txtbox-left">
@@ -128,9 +127,147 @@
         </div>
     </div>
   </section>
+  <section class="model">
+    <div class="container">
+      <div class="section_name left">
+        <h2>Model</h2>
+        <h3>ModelModelModel</h3>
+      </div>
+      <div class="model_wrap">
+        <div class="model_photo">
+          <a href="#">
+            <img src="./img/main/main_slider_img2.jpg" alt="model1">
+          </a>
+        </div>
+        <div class="model_photo">
+          <a href="#">
+            <img src="./img/main/main_slider_img3.jpg" alt="model2">
+          </a>
+        </div>
+        <div class="model_photo">
+          <a href="#">
+            <img src="./img/main/main_slider_img1.jpg" alt="model3">
+          </a>
+        </div>
+        <div class="model_photo">
+          <a href="#">
+            <img src="./img/main/main_slider_img4.jpg" alt="model4">
+          </a>
+        </div>
+      </div>
+      <div class="view_more">
+        <a href="#">View More</a>
+      </div>
+    </div>
+  </section>
+  <section class="promotion">
+    <div class="container">
+      <div class="section_name center">
+        <h2>Promotion</h2>
+        <h3>PromotionPromotionPromotion</h3>
+      </div>
+      <div class="promotion_wrap">
+      </div>
+      <div class="view_more">
+        <a href="#">View More</a>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="container">
+      <div class="section_name center">
+        <h2>Gallery</h2>
+        <h3>Gallery Photo</h3>
+      </div>
+      <div class="top">
+        <div class="big_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img3.jpg" alt="gallery_photo1">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+        <div class="small_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img2.jpg" alt="gallery_photo2">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="small_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img1.jpg" alt="gallery_photo3">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+        <div class="big_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img3.jpg" alt="gallery_photo4">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="big_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img3.jpg" alt="gallery_photo1">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+        <div class="small_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img2.jpg" alt="gallery_photo2">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="small_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img1.jpg" alt="gallery_photo3">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+        <div class="big_photo_wrap">
+          <div class="img_wrap">
+            <img src="./img/main/main_slider_img3.jpg" alt="gallery_photo4">
+          </div>
+          <div class="txt_wrap">
+            <h4>wnwjflwnwjfl</h4>
+          </div>
+        </div>
+      </div>
+      <div class="view_more">
+        <a href="#">View More</a>
+      </div>
+    </div>
+  </section>
+  <section class="service">
+    <div class="container">
+      <div class="section_name center">
+        <h2>Service</h2>
+        <h3>ServiceServiceServiceService Photo</h3>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
     
   </footer>
+  <script src="./js/common.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
